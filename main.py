@@ -1,7 +1,6 @@
-# This is a sample Python script.
+# Excelsior Wireless Ltd Jimmy Lamont 2023
+# A simple NTP Pool dash scraper to publish results to MQTT
 
-# Press Shift+F10 to execute it or replace it with your code.
-# Press Double Shift to search everywhere for classes, files, tool windows, actions, and settings.
 import requests
 import paho.mqtt.client as mqtt
 from bs4 import BeautifulSoup
