@@ -1,7 +1,7 @@
 NTP Score Parser
 Overview
 
-This Python script fetches the NTP (Network Time Protocol) score from a specified URL, parses the HTML content, and publishes the result to a private MQTT server if the score is higher than a certain threshold.
+This Python script fetches the NTP (Network Time Protocol) score from a specified URL, parses the HTML content, and publishes the result to a private MQTT server.
 Requirements
 
     Python 3
