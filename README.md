@@ -34,10 +34,19 @@ Run the script:
 
 bash
 
-    python main.py
+    python parser.py
 
 The script will fetch the NTP score, print it to the console, and publish it to the specified MQTT topic if it's higher than the threshold (10.0).
 Notes
 
     Ensure that your MQTT broker is running and accessible.
     Adjust the code as needed based on the HTML structure of the NTP score page.
+
+Automate parser to run every 60 minutes and post results
+
+    $ crontab -e
+
+At the bottom of your crontab:
+
+    * */1 * * * python3 /home/user/ntp-parser/parser.py > /dev/null 2>&1
+
