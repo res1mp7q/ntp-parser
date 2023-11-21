@@ -32,12 +32,12 @@ else:
     print("Score paragraph not found on the page.")
 
 # MQTT configuration
-mqtt_broker = "mqtt.excelsior.lan"
+mqtt_broker = "mqtt-broker-address"
 mqtt_topic = "ntp/score/state"
 
 # Publish the NTP score to MQTT
 client = mqtt.Client()
-client.username_pw_set("mqtt-username", "replace_me")
+client.username_pw_set("mqtt-username", "password")
 client.connect(mqtt_broker, 1883, 60)
 
 # Always publish the score to MQTT, regardless of its value
